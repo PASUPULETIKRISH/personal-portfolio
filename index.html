@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="krishn.css">
+    <script src="https://kit.fontawesome.com/4c9a672451.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <section class="Home">
+    <div id="header"></div>
+       <div class="container">
+        <nav>
+        <img src="images/logo.png" alt="logo">
+        
+        <ul id="sidemenu">
+       <li><a href="#header"><i class="fa-solid fa-house"> </i>Home</a></li>
+       <li><a href="#about"><i class="fa-regular fa-address-card"></i>About</a></li>
+       <li><a href="#skills_head"><i class="fa-solid fa-book"></i>Skills    </a></li>
+       <li><a href="#Courses"><i class="fa-brands fa-discourse"></i></i>Courses</a></li>
+       <li><a href="#contact"><i class="fa-solid fa-phone"></i>Contact</a></li>
+       <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+      </ul> 
+       <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+       </div>
+       <div class="headertext">
+        <p>Hi, MySelf</p>
+        <h1>PASUPULETI<br><span>KRISHNA MURTHY</span></h1>
+        <p>Frontend and backend developer</p>
+       </div>
+     </section>
+ <section class="aboutsec">
+    <div id="about">
+        <div class="container">
+        <div class="row">
+            <div class="about_col_1">
+                <img src="images/a1-Photoroom.jpg" alt="images">
+            </div>
+            <div class="about_col_2">
+                <h1 class="subtitle">About me..</h1>
+                <p>Motivated and technically proficient software engineering graduate 
+                    seeking an entry-level position to utilize skills in programming, problem-solving, and teamwork to contribute effectively to innovative projects within a dynamic software development environment.My goal is to contribute effectively to a team while continuously expanding my knowledge and expertise in software engineering
+                    I considered my self a responsible and orderly person. I am looking forward for my First Experience.</p>
+                    <div class="ttitle">
+                        <p class="tlinks active-link"  onclick="opentab('skills')">Education</p>
+                        <p class="tlinks" onclick="opentab('languges')">languges</p>
+                        <p class="tlinks" onclick="opentab('Internships')">Internships</p>
+                        
+                    </div>
+                    <div class="tcontent active-tab" id="skills">
+<ul>
+<li><span><strong>SSC </strong></span><br> Vivekananda municipal high school</li>
+<li><span><strong>INTERMEDIATE </strong></span><br> Sri sai chaithanya junior college</li>
+<li><span><strong>BTECH</strong></span><br> Siddharth institute of engineering and technology</li>
+</ul>
+
+                    </div>
+                    <div class="tcontent" id="languges">
+                        <ul>
+                        <li><span><strong>English </strong></span></li>
+                        <li><span><strong>Hindi </strong></span></li>
+                        <li><span><strong>Telugu </strong></span></li>
+                       
+                        </ul>
+                        
+                    </div>
+                    <div class="tcontent" id="Internships">
+                        <ul>
+                        <li><span><strong><a href="#">FULL STACK JAVA</a> </strong></span><br> By Q-Spiders</li>
+                        <li><span><strong><a href="#">CORE JAVA</a></strong></span><br>By MotionCut</li>
+                        <li><span><strong><a href="#">MATLAB</a></strong></span><br>By Mathworks</li>
+                        </ul>
+                        
+                    </div>
+            </div>
+        </div>
+        </div>
+            </div>
+<!--skills-->
+<div class="skill_sec">
+  <div class="container">
+    <h1 id="skills_head">SKILLS</h1>
+    <div class="skills_list">
+      <div>
+        <h2>FULL STACK JAVA</h2>
+        <img src="images/full stack.png" alt="img full_stack">
+      </div>
+      <div>
+        <h2>CORE JAVA</h2>
+        <img src="images/java.png">
+      </div>
+      <div>
+        <h2>SQL</h2>
+        <img src="images/sql.jpg">
+      </div>
+      <div>
+        <h2>JAVA SCRIPT (BASIC)</h2>
+        <img src="images/js.png">
+      </div>
+      <div>
+        <h2>C (INTERMEDIATE)</h2>
+        <img src="images/c.jpg">
+      </div>
+      <div>
+        <h2>HTML & CSS</h2>
+        <img src="images/html.png">
+      </div>
+      
+    </div>
+  </div>
+
+</div>
+
+<!--Courses-->
+<div id="Courses">
+    <div class="container">
+        <h1 class="subtitle">COURSES</h1>
+        <div class="courses_list">
+            <div>
+                <h2>Full stack web dev</h2>
+                <p>"Completed comprehensive course at DevTown on Full Stack Web Development, mastering both front-end and back-end technologies. Acquired skills in HTML, CSS, JavaScript, enabling the development of dynamic, responsive web applications."</p>
+            </div>
+            <div>
+              <h2>CORE JAVA</h2>
+              <p>"I have successfully completed the core Java course at QSpiders, where I gained a comprehensive understanding of fundamental Java concepts. The course covered topics such as object-oriented programming, data structures, exception handling, multithreading, and more. I am now equipped with the knowledge and skills needed to develop robust Java applications."</p>
+          </div>
+          <div>
+            <h2>MS EXCEL USING AI</h2>
+            <p>"Successfully completed an advanced course on Microsoft Excel utilizing Artificial Intelligence (AI) as part of the Office Master Workshop. The course covered advanced Excel features, including AI-powered data analysis, machine learning models for forecasting, and automation using VBA (Visual Basic for Applications), enhancing proficiency in data management and analysis within the workplace."</p>
+        </div>
+
+
+        </div>
+
+    
+    </div>
+</div>
+
+<div id="contact">
+  <div class="container">
+    <h1 class="subtitle">Contact</h1>
+    <div class="row">
+      <div class="contact_left">
+      
+        <p><i class="fa-regular fa-envelope"></i>kk5597568@gmail.com</p>
+       <p><i class="fa-solid fa-phone"></i>9866725004</p>
+        <div class="socialicons">
+          <a href="https://www.linkedin.com/in/pasupuleti-krishnamurthy"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/krishna_royal_roy?igsh=MWYwd2R2MGcwMGQ4aQ=="><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/PASUPULETIKRISH"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <div>
+          <a href="images/Resumae.jpg" download class="btn"> click to view Resumae</a>
+        </div>
+      </div>
+      <div class="contact_right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="message" rows="6" placeholder="your message"></textarea>
+          <button type="submit" class="button">submit</button>
+      
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p><i class="fa-regular fa-copyright"></i> copyright reserved by krishna</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+ </section>
+      <script>
+            var tlinks= document.getElementsByClassName("tlinks");
+            var tcontent= document.getElementsByClassName("tcontent");
+            function opentab(tabname){
+                for(tlink of tlinks){
+                    tlink.classList.remove("active-link");
+                }
+                for(tcontents of tcontent){
+                    tcontents.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+
+      </script> 
+      <script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+          sidemenu.style.right="0"
+        }
+   
+        function closemenu(){
+          sidemenu.style.right="-200px"
+        }
+      </script>
+  
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz-5r8XicGc4LSqTzxU2p9xf5N5mKBiUpGT1iJR28FCZGIwJuhCgrNZaCtU2RlqHjLejw/exec'
+        const form = document.forms['submit-to-google-sheet']
+      const msg=document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              msg.innerHTML="message sent successfully"
+              setTimeout(function(){
+                msg.innerHTML=""
+              },3000)
+              form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

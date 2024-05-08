@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #050505;
+    color: #fff;
+}
+#header{
+    width: 500px;
+    height: 700px;
+    margin-right: 4%;
+    margin-top: 3%;
+    background-image: url("images/a3.jpg");
+    float: right;
+    background-size: cover;
+    background-position: center;
+}
+img{
+    width: 250px;
+    height: 90px;
+}
+.container{
+    padding: 10px 10%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: circle;
+    margin: 15px 35px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a i{
+    margin-right: 5px;
+}
+nav ul li a::after{
+    content: ' ';
+    width: 0;
+    height: 4px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.headertext{
+    margin-top: 8%;
+    font-size: 30px;
+    margin-left: 10%;
+
+}
+.headertext h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.headertext h1 span{
+    color: #ff004f;
+}
+/*------------------about-----------*/
+.aboutsec{
+    margin-top: 17%;
+    padding: 80px 0;
+    color: #ababab;
+}
+.about_col_1 img{
+    flex-basis: 25%;
+}
+.about_col_1 img{
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about_col_2{
+    flex-basis: 50%;
+    font-size: 20px;
+
+}
+.subtitle{
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 7px;
+}
+.ttitle{
+    display: flex;
+    margin:20px 0 40px;
+}
+.tlinks{
+    margin-right:50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tlinks::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tlinks.active-link::after{
+    width: 50%;
+}
+.tcontent ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tcontent ul li span{
+    color: aqua;
+    font-size: 14px;
+}
+.tcontent a{
+    color: aqua;
+    text-decoration: none;
+}
+.tcontent{
+    display: none;
+}
+.tcontent.active-tab{
+    display: contents;
+}
+
+.skill_sec{
+    padding: 30px 0;
+
+}
+.skills_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 100px;
+    margin-top: 50px;
+   
+}
+.skills_list :hover{
+    background: black;
+    transform: translateY(-10px);
+}
+
+#skills_head{
+    margin-top: 4%;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 500;
+}
+.skills_list div img{
+    height: 250px;
+    width: 250px;
+    border-radius: 5%;
+}
+.skills_list div h2{
+    color: aqua;
+    margin-bottom: 10px;
+}
+/*---course--*/
+#courses{
+    padding-top: 50px;
+    
+}
+.courses_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+.courses_list div{
+    background-color: black;
+    padding: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: back-ground 0.5s, transform 0.5s;
+}
+.courses_list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: aqua;
+}
+.courses_list div p{
+    font-size: 17px;
+}
+.courses_list div:hover{
+    background: darkblue;
+    transform: translateY(-10px);
+
+}
+
+/*---contact---*/
+
+.contact_left{
+    flex-basis: 35%;
+}
+.contact_right{
+    flex-basis: 65%;
+}
+.contact_left p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+.contact_left p i{
+    color: aqua;
+    margin-right:15px ;
+    font-size: 25px;
+}
+.socialicons a{
+text-decoration: none;
+font-size: 30px;
+margin-right: 15px;
+margin-bottom: 25px;
+color: #ababab;
+display: inline-block;
+transition: transform 0.5s;
+}
+.socialicons a:hover{
+    color: aqua;
+    transform: translateY(-5px);
+}
+.btn{
+    text-decoration:none;
+    font-size: 20px;
+    color: aqua;
+}
+.button{
+    width: 70px;
+    height: 35px;
+    background-color: #ff004f;
+    border: none;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+.button:hover{
+   color:white; 
+   transform: translateY(-5px);
+}
+.contact_right form{
+    width: 100%;
+}
+form input, form textarea{
+    display: inline-block;
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+/* small screen*/
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width: 600px)  {
+  #header{
+    float: right;
+    width: 250px;
+    height: 700px;
+    margin-right: -60%;
+  }
+   
+    #header img{
+       background-image: url("images/a4.jpg");
+
+
+    }
+    #header,nav,.headertext{
+        display: inline-block;
+        justify-content:flex-start;
+        gap:10px;
+    }
+    nav img{
+     display: none;
+        
+    }
+
+    nav .fa-solid{
+        display:block;
+       
+        font-size: 25px;
+    }
+    nav ul{
+        background: grey;
+        color: black;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+
+    }
+    nav ul li{
+        display:block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    nav ul li .fa-solid{
+        display: none;
+    }
+    nav ul li .fa-regular{
+        display: none;
+    }
+    nav ul li .fa-brands{
+        display: none;
+    }
+    .headertext{
+        font-size: 20px;
+        margin-top: -60%;
+        align-items: center;
+        top: auto;
+    }
+    .skills_list{
+        margin-left:15%;
+
+    }
+    .skills_list div img{
+        height: 350px;
+        width: 350px;
+    }
+    .courses_list{
+        margin-left: 15%;
+    }
+    .courses_list div {
+        height: 350px;
+        width: 350px;
+    }
+    .contact_left,.contact_right{
+       flex-basis: 100%;
+    }
+    .row{
+        margin-left: 17%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}
+#msg{
+    color: aqua;
+    margin-top: 10px;
+    display: block;
+}
